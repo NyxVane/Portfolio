@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link href="src/style.css" rel="stylesheet">
 </head>
 <body>
@@ -80,23 +81,34 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(34,211,238,0.3)] transition-all">
-          <div class="h-48 bg-zinc-800 flex items-center justify-center">
-            <span class="text-4xl">💻</span>
+          <div class="w-full h-70 bg-zinc-800 overflow-hidden">
+            <img 
+              src="/images/Shopping-list.png" 
+              alt="Bevásárlólista" 
+              class="w-full h-full object-cover hover:scale-105 transition-transform"
+            />
           </div>
           <div class="p-6 text-center">
-            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Asztali Raktárkezelő</h3>
-            <p class="text-zinc-400 text-sm mb-6">C# .NET környezetben készült Windows Forms alkalmazás, teljes körű teszteléssel.</p>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Okos Bevásárlólista</h3>
+            <p class="text-zinc-400 text-sm mb-6">Modern bevásárlólista alkalmazás LocalStorage mentéssel. Tartalmazza a tételek szerkesztését, törlését és automatikus sorbarendezését a státuszuk alapján.</p>
             
             <div class="flex flex-col gap-6 pt-4 border-t border-zinc-800">
 
               <div class="flex flex-wrap justify-center gap-2">
-                <span class="text-[10px] uppercase tracking-wider bg-zinc-800 text-cyan-400 px-2 py-1 rounded font-bold border border-cyan-500/20">C#</span>
-                <span class="text-[10px] uppercase tracking-wider bg-zinc-800 text-cyan-400 px-2 py-1 rounded font-bold border border-cyan-500/20">MSSQL</span>
+                <span class="text-[10px] uppercase tracking-wider bg-zinc-800 text-cyan-400 px-2 py-1 rounded font-bold border border-cyan-500/20">Vite</span>
+                <span class="text-[10px] uppercase tracking-wider bg-zinc-800 text-cyan-400 px-2 py-1 rounded font-bold border border-cyan-500/20">JavaScript</span>
               </div>
 
-              <a href="#" class="mx-auto w-fit text-xs font-bold text-white border border-cyan-500 px-6 py-2 rounded-lg hover:bg-cyan-500 hover:text-zinc-950 transition-all shadow-[0_0_15px_-5px_rgba(34,211,238,0.4)]">
-                Megtekintés
-              </a>
+              <div class="mx-auto flex gap-4">
+                <a href="https://nyxvane.github.io/shopping-list/" target="_blank" 
+                  class="text-cyan-400 hover:text-cyan-300 font-bold text-sm transition-colors flex items-center gap-1">
+                    Élő demo <span>→</span>
+                </a>
+                <a href="https://github.com/NyxVane/shopping-list" target="_blank" 
+                  class="text-zinc-500 hover:text-zinc-300 font-medium text-sm transition-colors">
+                    GitHub kód
+                </a>
+              </div>
 
             </div>
           </div>
